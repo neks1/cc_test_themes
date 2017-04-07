@@ -1,0 +1,99 @@
+.next-section {
+  @include transform(translateX(-50%));
+  bottom: 3%;
+  left: 50%;
+  position: fixed;
+  z-index: 99;
+
+  a {
+    background: url('../images/icons/next-section.png') no-repeat;
+    background-size: contain;
+    display: block;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+
+    &.last-section-is-active {
+      display: none !important;
+    }
+  }
+}
+
+.slick-dots {
+
+  li {
+    background: rgba($color-dark-grey, .5);
+    border-radius: 50%;
+    font-size: 0;
+    height: 12px;
+    width: 12px;
+
+    * {
+      font-size: 0;
+    }
+
+    &.slick-active {
+      background: $color-dark-grey;
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+
+  &:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-size: inherit;
+    font: normal normal normal 30px/1 FontAwesome;
+    height: 24px;
+    text-rendering: auto;
+    width: 24px;
+  }
+}
+
+.slick-next {
+
+  &:before {
+    background: url(../images/icons/right-arrow.png) no-repeat center;
+  }
+}
+.slick-prev {
+
+  &:before {
+    background: url(../images/icons/left-arrow.png) no-repeat center;
+  }
+}
+
+@media (min-width: $small_device_width) {
+  .next-slide-section a.active-section-5,
+  .next-slide-section a.active-section-6 {
+    background: url('../images/icons/next-section-tab.png') no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 55px;
+  }
+
+  .next-slide-section a {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (min-width: $small_device_width) and (max-width: $mid_device_width) {
+  .slick-slide {
+    height: 90px !important;
+
+    div {
+      height: 100%;
+    }
+
+    img {
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}

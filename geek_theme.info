@@ -1,0 +1,41 @@
+name = 'Geek Label'
+description = Uses the Bootstrap Framework Sass source files and must be compiled (not for beginners).
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[content]        = 'Content'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = dist/main.css
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js'
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js'
+
+; Disable the CDN provider so compiled source files can be used.
+settings[bootstrap_cdn] = ''
+
+scripts[] = dist/main.js

@@ -1,0 +1,118 @@
+.pane-views-services-block {
+  background: $white;
+
+  .views-row {
+    margin-bottom: 40px;
+  }
+
+  .vocabulary-services {
+    @include flex-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .field-type-image {
+    float: left;
+    width: 30%;
+
+    .field-item {
+      background-color: $color-pink;
+      border-radius: 50%;
+      height: 50px;
+      overflow: hidden;
+      padding: 10px 15px;
+      width: 50px;
+    }
+
+    img {
+      display: inline-block;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      vertical-align: middle;
+      width: auto;
+    }
+  }
+
+  .field-name-title {
+    float: left;
+    padding-left: 25px;
+    text-align: left;
+    white-space: nowrap;
+    width: 70%;
+
+    p {
+      font-family: $museo300;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $min_device_width) {
+  .pane-views-services-block {
+
+    .field-type-image .field-item {
+      height: 65px;
+      padding: 17px 15px;
+      width: 65px;
+    }
+
+    .field-name-title p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $small_device_width) {
+  .pane-views-services-block {
+
+    .field-type-image .field-item {
+      height: 85px;
+      padding: 20px 9px;
+      width: 85px;
+    }
+
+    .field-name-title p {
+      font-size: 27px;
+    }
+  }
+}
+
+@media (min-width: $desc_width) {
+  .pane-views-services-block {
+
+    .vocabulary-services {
+      display: block;
+    }
+
+    .views-row {
+      float: left;
+      margin-right: 66px;
+      width: 235px;
+    }
+
+    .views-row-last {
+      margin-right: 0;
+    }
+
+    .field-name-title {
+      text-align: center;
+      padding-left: 0;
+    }
+
+    .field-name-title,
+    .field-type-image {
+      width: 100%;
+    }
+
+    .field-type-image .field-item {
+      height: 235px;
+      padding: 75px 30px;
+      width: 235px;
+    }
+
+    .field-type-image {
+      margin-bottom: 50px;
+    }
+  }
+}

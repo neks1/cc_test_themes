@@ -1,0 +1,49 @@
+.contact {
+
+  form {
+    margin-bottom: 50px;
+  }
+
+  .desc-text {
+    display: none;
+    font-family: $museo300;
+    font-size: 23;
+  }
+
+  .mob-text-phone,
+  .mob-text-email a {
+    display: inline-block;
+    font-family: $museo300;
+    font-size: 17px;
+    margin: 0;
+    padding-left: 25px;
+  }
+
+  .mob-text-phone {
+    background: url(../images/icons/phone.png) no-repeat center left;
+    background-position-y: 2px;
+  }
+
+  .mob-text-email a {
+    background: url(../images/icons/mail.png) no-repeat center left;
+  }
+
+  .mob-text-email a {
+    color: $color-main;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $small_device_width) {
+  .contact {
+
+    .desc-text {
+      display: block;
+    }
+
+    .mob-text-phone,
+    .mob-text-email {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.pane-bean-logo-text {
+  background: $color-pink;
+
+  .field-type-image {
+    margin-bottom: 60px;
+  }
+
+  .field-name-field-text p {
+    color: $white;
+    font-family: $museo300;
+    font-size: 26px;
+  }
+}
+
+@media (min-width: $small_device_width) {
+  .pane-bean-logo-text {
+
+    .field-type-image {
+      margin-bottom: 100px;
+    }
+
+    .field-name-field-text p {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.img-text {
+
+  .field-name-field-text {
+    margin-top: 50px;
+  }
+
+  .field-name-field-text p {
+    font-family: $museo300;
+    font-size: 29px;
+  }
+
+  .field-name-field-text span {
+    color: $color-pink;
+    font-family: $museo300;
+    font-size: 29px;
+  }
+}
+
+.pane-bean-both .field-name-field-text {
+    margin-top: 160px;
+}
+
+@media (min-width: $min_width) {
+  .img-text {
+
+    .field-name-field-text {
+      margin-top: 135px;
+    }
+
+    .field-name-field-text span,
+    .field-name-field-text p {
+      font-size: 35px;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+html {
+  @include box();
+  font-family: $main-font;
+  font-size: 100%;
+  height: 100%;
+
+  * {
+    @include box();
+    font-family: $main-font;
+  }
+
+  body {
+    background: $color-background;
+    color: $color-main;
+    height: 100%;
+  }
+}
+
+img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+a {
+  @include transition(all .4s ease-in-out);
+  color: $color-pink;
+  text-decoration: none;
+
+  &:hover {
+    @include transition(all .4s ease-in-out);
+    color: $color-pink;
+    text-decoration: underline;
+  }
+}
+
+input,
+button,
+input *,
+button * {
+  @include btnappearence();
+  outline: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+input[type="checkbox"] {
+  @include btnappearence(checkbox);
+}
+
+h2 {
+  color: $color-main;
+  font-family: $museoR3;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+
+  &.pane-title {
+    left: 0;
+    position: absolute;
+    top: 3%;
+    width: 100%;
+  }
+
+  @media (min-width: $min_width) {
+    font-size: 73px;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p,
+a,
+span,
+div {
+  font-size: 20px;
+}
+
+textarea,
+textarea.form-control,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+  @include placeholder-color($color-main);
+  background-color: $white;
+  border: 2px solid $color-grey;
+  border-radius: 4px;
+  color: $color-main;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  max-width: 550px;
+  font-family: $museo300;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+  padding: 26px 12px;
+
+  @media (min-width: $min_width) {
+    padding: 31px 12px;
+  }
+}
+
+button[type="submit"] {
+  @include main-btn;
+  border:none;
+  &:hover,
+  &:active,
+  &:focus {
+    @include main-btn;
+  }
+}
+
+textarea {
+  resize: none;
+
+  @media (min-width: $min_width) {
+    height: 193px;
+  }
+}
+
+.webform-component-textarea .grippie {
+  display: none;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+#admin-menu a {
+  font-size: 14px;
+}

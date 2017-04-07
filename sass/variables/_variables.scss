@@ -1,0 +1,19 @@
+/* color */
+$white: #fff;
+$black: #000;
+
+$color-main: #404042;
+$color-grey: #cccccc;
+$color-dark-grey: #5e6b6e;
+$color-light-grey: #7b7a7b;
+$color-background: #f1f2f2;
+$color-pink: #d83454;
+
+
+// Fonts
+@include font('museosans', museosans500);
+@include font('Museo Sans W01 Rounded 300', MuseoSansRounded300);
+@include font('MuseoSansRounded300', MuseoSansRounded300);
+$main-font: 'museosans', sans-serif;
+$museoR3: 'Museo Sans W01 Rounded 300';
+$museo300: 'MuseoSansRounded300';

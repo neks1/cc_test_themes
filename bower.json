@@ -1,0 +1,9 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "devDependencies": {
+    "fullpage.js": "^2.8.9",
+    "slick-carousel": "^1.6.0",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
